@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("src/control.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("src/juegoportada.jpg")]
 
 

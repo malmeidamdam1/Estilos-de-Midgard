@@ -24,5 +24,12 @@ namespace Estilos_de_Midgard
         {
             InitializeComponent();
         }
+
+        private void Entrar_Click(object sender, RoutedEventArgs e)
+        {
+            Ventana2 ventana2 = new Ventana2();
+            ventana2.Show();
+            this.Close();
+        }
     }
 }

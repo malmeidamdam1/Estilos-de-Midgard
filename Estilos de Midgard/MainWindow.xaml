@@ -5,77 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Estilos_de_Midgard"
         mc:Ignorable="d"
-        Title="Inicio" Height="600" Width="800" 
-        WindowStartupLocation="CenterScreen"
-        ResizeMode="CanResizeWithGrip" >
-
-    <!--Estilo aplica solo a los elementos definidos en esta ventana a los que apuntemos con style-->
-    <Window.Resources>
-        <Style TargetType="MenuItem">
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Margin" Value="24"/>
-            <Setter Property="FontSize" Value="20"/>
-        </Style>
-
-        <Style TargetType="Menu">
-            <Setter Property="Background" Value="LightGray"/>
-        </Style>
-
-        <Style TargetType="Image">
-            <Setter Property="Stretch" Value="Fill"/>
-        </Style>
-
-    </Window.Resources>
+        Title="LOGIN" Height="450" Width="800">
 
 
-    <!--DockPanel con 
-    1 Menu, tiene: MenuItems - Son las distintas opciones
-    1 Grid tiene: imagenes distribuidas 
-    -->
-    <DockPanel>
-        <Menu DockPanel.Dock="Top">
+    <!--Aqui usamos estilos invidiuales en cada boton-->
+    <Grid Background="LightGray">
 
-            <MenuItem Header="INICIO">
-                <MenuItem.Icon>
-                    <Image Source="src/control.png"/>
-                </MenuItem.Icon>
-            </MenuItem>
-
-            <MenuItem Header="BIBLIOTECA">
-                <MenuItem.Icon>
-                    <Image Source="src/control.png"/>
-                </MenuItem.Icon>
-            </MenuItem>
-
-            <MenuItem Header="COMUNIDAD">
-                <MenuItem.Icon>
-                    <Image Source="src/control.png"/>
-                </MenuItem.Icon>
-            </MenuItem>
+        <Button Content="USUARIO&#xD;&#xA;" HorizontalAlignment="Stretch"   Width="Auto" Height="59" Margin="222,140,225,221">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#FFFFA3A3"/>
+                </Style>
+            </Button.Style>
+        </Button>
 
 
-            <MenuItem Header="SOPORTE">
-                <MenuItem.Icon>
-                    <Image Source="src/control.png"/>
-                </MenuItem.Icon>
-            </MenuItem>
-        </Menu>
+        <Button Content="CONTRASEÑA" HorizontalAlignment="Stretch"   Width="Auto" Height="57" Margin="222,222,225,139">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#FFFFA3A3"/>
+                </Style>
+            </Button.Style>
+        </Button>
 
 
 
-        <Grid>
-            <Image Source="src/control.png" HorizontalAlignment="Left" Height="266" Margin="54,85,0,0" VerticalAlignment="Top" Width="329"/>
-            <TextBlock HorizontalAlignment="Left" Margin="457,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Height="54" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" FontSize="20" TextAlignment="Center"><Run Text="NOMBRE JUEGO "/><Run Text="#"/><Run Text="2"/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="457,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Height="54" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" TextAlignment="Center" FontSize="20"><Run Text="NOMBRE JUEGO "/><Run Text="#1"/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="457,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Height="54" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" TextAlignment="Center" FontSize="20"><Run Text="NOMBRE JUEGO "/><Run Text="#"/><Run Text="3"/></TextBlock>
-
-        </Grid>
-
-
-
-    </DockPanel>
+        <TextBox  HorizontalAlignment="Left" Height="36" TextWrapping="Wrap" Text="LOGIN&#xD;&#xA;" VerticalAlignment="Top" Width="294" Margin="245,75,0,0" Background="{x:Null}" FontSize="30" TextAlignment="Center" BorderBrush="Transparent"  FontWeight="Bold" />
+        <Button Content="ENTRAR" HorizontalAlignment="Stretch" Width="Auto" Height="57" Margin="296,306,333,55" Click="Entrar_Click">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="#FFFFA3A3"/>
+                </Style>
+            </Button.Style>
+        </Button>
 
 
-
-
+    </Grid>
 </Window>

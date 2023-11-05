@@ -15,18 +15,20 @@ using System.Windows.Shapes;
 namespace Estilos_de_Midgard
 {
     /// <summary>
-    /// Lógica de interacción para Ventana2.xaml
+    /// Lógica de interacción para Ventana4.xaml
     /// </summary>
-    public partial class Ventana2 : Window
+    public partial class Ventana4 : Window
     {
-        public Ventana2()
+        public Ventana4()
         {
             InitializeComponent();
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Ya estas aquí");
+            Ventana2 ventana2 = new Ventana2();
+            ventana2.Show();
+            this.Close();
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
@@ -43,9 +45,8 @@ namespace Estilos_de_Midgard
 
         private void MenuItem_Click_3(object sender, RoutedEventArgs e)
         {
-            Ventana4 ventana4 = new Ventana4();
-            ventana4.Show();
-            this.Close();
+            MessageBox.Show("Ya estas aqui");
+
         }
     }
 }
